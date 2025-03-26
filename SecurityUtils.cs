@@ -585,7 +585,7 @@ public class SecurityUtils
             return new Tuple<bool, string>(false, "");
         }
 
-        if (!pageURL.StartsWith("https://zioeren.it/verify/"))
+        if (!pageURL.StartsWith("https://zygotecode.it/verify/"))
         {
             return new Tuple<bool, string>(false, "");
         }
@@ -595,7 +595,7 @@ public class SecurityUtils
             return new Tuple<bool, string>(false, "");
         }
 
-        string verificationCode = pageURL.Substring("https://zioeren.it/verify/".Length);
+        string verificationCode = pageURL.Substring("https://zygotecode.it/verify/".Length);
         verificationCode = verificationCode.Substring(0, verificationCode.Length - 1);
 
         if (verificationCode.Length != 120)
